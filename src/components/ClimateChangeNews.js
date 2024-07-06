@@ -25,8 +25,8 @@ const ClimateChangeNews = () => {
                 <Card.Text>{news.description}</Card.Text>
                 <div className="news-actions">
                   <a href={news.link} className="card-link">Read more</a>
-                  <a href="#" className="card-link">Favorite</a>
-                  <a href="#" className="card-link">Share</a>
+                  <a href={news.link} className="card-link">Favorite</a>
+                  <a href={news.link} className="card-link">Share</a>
                 </div>
               </div>
               <div className="dark-square"></div>

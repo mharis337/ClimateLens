@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "./styles/Videos.css";
 

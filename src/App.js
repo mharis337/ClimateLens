@@ -19,6 +19,7 @@ import ClimateChangeEvents from './components/ClimateChangeEvents';
 import NewEvent from './components/NewEvent';
 
 const App = () => {
+  // eslint-disable-next-line no-unused-vars
   const [navbarExpanded, setNavbarExpanded] = useState(false);
   const [discussions, setDiscussions] = useState([]);
   const [events, setEvents] = useState([]);

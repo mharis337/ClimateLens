@@ -44,6 +44,7 @@ const ClimateStats = () => {
     window.addEventListener('resize', updateGrouping);
 
     return () => window.removeEventListener('resize', updateGrouping);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
