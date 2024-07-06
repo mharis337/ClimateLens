@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tabStyle {
+  color: white;
+  background-color: rgb(154, 170, 35);
+  font-family: "Modak", sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.tabStyle .nav-link {
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000,
+    -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+}
+
+.tabStyle .nav-link.active {
+  color: rgb(248, 187, 60) !important;
+  background-color: rgb(189, 209, 41) !important;
+}
+
+.tabStyle .nav-link:hover {
+  color: rgb(252, 209, 117) !important;
+}

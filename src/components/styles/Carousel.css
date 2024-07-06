@@ -1,0 +1,54 @@
+/* Carousel */
+.carousel-caption h3 {
+  font-family: 'Modak', cursive;
+  font-size: 60px;
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+  margin: 10%;
+}
+
+.carousel-caption p {
+  color: white;
+  margin-top: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1450px) {
+  .carousel-caption h3 {
+    font-size: 60px;
+  }
+
+  .carousel-caption p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .carousel-caption h3 {
+    font-size: 50px;
+  }
+
+  .carousel-caption p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 30px;
+  }
+
+  .carousel-caption p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h3 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+[
+    {
+      "title": "Climate Change Awareness March",
+      "description": "Join us for a march through the city to raise awareness about climate change and its impact on our environment.",
+      "organizer": "Green Earth",
+      "date": "2024-07-15",
+      "participants": 150
+    },
+    {
+      "title": "Tree Planting Day",
+      "description": "Participate in our tree planting event to help restore our forests and combat climate change.",
+      "organizer": "Eco Warriors",
+      "date": "2024-08-01",
+      "participants": 200
+    },
+    {
+      "title": "Renewable Energy Workshop",
+      "description": "Attend our workshop to learn about renewable energy sources and how they can help reduce carbon emissions.",
+      "organizer": "Sustainable Future",
+      "date": "2024-07-25",
+      "participants": 75
+    },
+    {
+      "title": "Beach Clean-Up",
+      "description": "Join our community beach clean-up event to help remove plastic waste and protect marine life.",
+      "organizer": "Ocean Guardians",
+      "date": "2024-07-20",
+      "participants": 100
+    }
+  ]
+  

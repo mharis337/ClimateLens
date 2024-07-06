@@ -1,0 +1,78 @@
+/* Discussion Board*/
+.discussion {
+  background-color: #a5d5e7ff;
+  font-family: "Modak";
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+    0 2px 0 #000;
+}
+
+.discTitle {
+  color: white;
+  font-size: 60px;
+}
+
+.threadButton {
+  font-size: 30px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+    0 2px 0 #000;
+}
+
+.innerText {
+  font-size: 15px;
+  text-shadow: none;
+}
+
+/* Small Card */
+.cardStyle {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.crd-title {
+  color: rgb(248, 187, 60) !important;
+  font-size: 30px !important;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+    0 2px 0 #000;
+}
+
+.crd-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Large Card */
+.post-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.post-card-avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.crd-tags .crd-tag {
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #999;
+  margin-right: 10px;
+}
+
+.crd-content-placeholder {
+  width: 100%;
+  height: 180px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}

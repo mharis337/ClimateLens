@@ -1,0 +1,41 @@
+/*FAQ*/
+.faq-page-wrapper {
+    background-color: #A5D5E7ff;
+    min-height: 100vh;
+    padding-top: 5%;
+    font-size: 30px;
+  }
+  
+  .faq-header {
+    font-family: 'Modak';
+    font-size: 30px;
+    color: rgb(248, 187, 60);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+    transform: scale(2);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .accordion-button {
+    background-color: #007bff;
+    font-family: 'Modak';
+    font-size: 30px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+    color: #C1CABE;
+  }
+  
+  .accordion-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .accordion-body {
+    background-color: #e9ecef;
+    color: #333;
+    font-family: 'Modak';
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: #63705f;
+  }
+  

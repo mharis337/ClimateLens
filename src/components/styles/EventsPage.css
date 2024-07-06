@@ -1,0 +1,48 @@
+/*Events*/ 
+.eventsTitle {
+  font-family: "Modak";
+  color: white;
+  font-size: 60px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+    0 2px 0 #000;
+}
+
+.eventTitle {
+  font-family: "Modak";
+  color: rgb(248, 187, 60);
+  font-size: 30px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+    0 2px 0 #000;
+}
+
+.largeText {
+  font-size: 30px;
+}
+
+.mediumText {
+  font-size: 20px;
+}
+
+.createEventButton {
+  margin-left: auto;
+  font-family: "Modak";
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+    0 2px 0 #000;
+}
+
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Modak";
+  font-size: 15px;
+  gap: 20px;
+}
+
+.event-card {
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

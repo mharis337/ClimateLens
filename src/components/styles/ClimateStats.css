@@ -1,0 +1,40 @@
+/* ClimateStats */
+.stat-colors {
+  background-image: url('../../../public/img/sky.jpg');
+  background-position: center;
+  font-family: "Modak", system-ui;
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+}
+
+.stat-card {
+  text-align: center;
+  border-left: 1px solid #ffffff;
+}
+
+.stat-card h3 {
+  font-size: 30px;
+}
+
+.stat-card .value {
+  font-size: 40px;
+}
+
+.stat-card .unit {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.value.up {
+  color: red;
+}
+
+.value.down {
+  color: blue;
+}
+
+.carousel-item .row {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}

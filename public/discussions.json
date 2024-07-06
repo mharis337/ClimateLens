@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Impact of Deforestation on Climate Change",
+    "description": "Discussion on how deforestation contributes to climate change and what can be done to mitigate its effects.",
+    "author": "JaneDoe",
+    "date": "2024-06-20",
+    "replies": 15,
+    "posts": [
+      {
+        "author": "EnvironmentEnthusiast",
+        "time": "2 hours ago",
+        "platform": "Twitter",
+        "content": "Join the conversation and help make a difference!",
+        "tags": ["Activism", "Awareness"]
+      }
+    ]
+  },
+  {
+    "title": "Renewable Energy Sources: Pros and Cons",
+    "description": "Both have their merits, but which one is more sustainable in the long run?",
+    "author": "GreenTechGuru",
+    "date": "2024-06-21",
+    "replies": 22,
+    "posts": [
+      {
+        "author": "TechEnthusiast",
+        "time": "3 hours ago",
+        "platform": "Twitter",
+        "content": "Solar and wind energy are great options!",
+        "tags": ["Solar", "Wind", "Energy"]
+      }
+    ]
+  },
+  {
+    "title": "The Future of Electric Vehicles",
+    "description": "Exploring the advancements and challenges in the electric vehicle industry.",
+    "author": "AutoExpert",
+    "date": "2024-06-22",
+    "replies": 30,
+    "posts": [
+      {
+        "author": "EVFan",
+        "time": "4 hours ago",
+        "platform": "Twitter",
+        "content": "Excited about the new battery technologies!",
+        "tags": ["ElectricVehicles", "Technology"]
+      }
+    ]
+  },
+  {
+    "title": "Sustainable Agriculture Practices",
+    "description": "How can farmers adopt sustainable practices to protect the environment?",
+    "author": "AgriSpecialist",
+    "date": "2024-06-23",
+    "replies": 18,
+    "posts": [
+      {
+        "author": "FarmerJohn",
+        "time": "5 hours ago",
+        "platform": "Twitter",
+        "content": "Cover crops are a game changer!",
+        "tags": ["Sustainability", "Agriculture"]
+      }
+    ]
+  },
+  {
+    "title": "Plastic Pollution: Causes and Solutions",
+    "description": "An in-depth look at the plastic pollution crisis and possible solutions.",
+    "author": "EcoWarrior",
+    "date": "2024-06-24",
+    "replies": 25,
+    "posts": [
+      {
+        "author": "CleanSeas",
+        "time": "6 hours ago",
+        "platform": "Twitter",
+        "content": "Single-use plastics should be banned!",
+        "tags": ["Pollution", "Plastics"]
+      }
+    ]
+  },
+  {
+    "title": "Urban Green Spaces and Their Benefits",
+    "description": "The importance of green spaces in urban areas for health and well-being.",
+    "author": "CityPlanner",
+    "date": "2024-06-25",
+    "replies": 20,
+    "posts": [
+      {
+        "author": "NatureLover",
+        "time": "7 hours ago",
+        "platform": "Twitter",
+        "content": "Parks are essential for city living!",
+        "tags": ["UrbanPlanning", "GreenSpaces"]
+      }
+    ]
+  },
+  {
+    "title": "Water Conservation Techniques",
+    "description": "Effective methods to conserve water in daily life and agriculture.",
+    "author": "HydroExpert",
+    "date": "2024-06-26",
+    "replies": 12,
+    "posts": [
+      {
+        "author": "WaterSaver",
+        "time": "8 hours ago",
+        "platform": "Twitter",
+        "content": "Drip irrigation is highly efficient!",
+        "tags": ["Conservation", "Water"]
+      }
+    ]
+  },
+  {
+    "title": "Climate Change Policy: What Needs to be Done?",
+    "description": "Discussion on the policies required to combat climate change effectively.",
+    "author": "PolicyMaker",
+    "date": "2024-06-27",
+    "replies": 28,
+    "posts": [
+      {
+        "author": "ClimateActivist",
+        "time": "9 hours ago",
+        "platform": "Twitter",
+        "content": "Stronger regulations are necessary!",
+        "tags": ["ClimatePolicy", "Regulation"]
+      }
+    ]
+  },
+  {
+    "title": "Wildlife Conservation Efforts",
+    "description": "How to protect endangered species and conserve biodiversity.",
+    "author": "WildlifeExpert",
+    "date": "2024-06-28",
+    "replies": 16,
+    "posts": [
+      {
+        "author": "AnimalLover",
+        "time": "10 hours ago",
+        "platform": "Twitter",
+        "content": "Habitat protection is key!",
+        "tags": ["Conservation", "Biodiversity"]
+      }
+    ]
+  },
+  {
+    "title": "The Role of Technology in Environmental Protection",
+    "description": "Examining how technology can aid in environmental conservation efforts.",
+    "author": "TechEnviro",
+    "date": "2024-06-29",
+    "replies": 35,
+    "posts": [
+      {
+        "author": "Innovator",
+        "time": "11 hours ago",
+        "platform": "Twitter",
+        "content": "Innovative solutions are the future!",
+        "tags": ["Technology", "Environment"]
+      }
+    ]
+  }
+]

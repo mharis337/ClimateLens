@@ -1,0 +1,29 @@
+/*New Threads*/
+.create-thread-button {
+  margin-top: 10px;
+}
+
+.title {
+  font-family: "Modak";
+  font-size: 60px;
+  color: rgb(248, 187, 60);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+    0 2px 0 #000;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.innerTextThread {
+  font-family: "Modak";
+  font-size: 30px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
+    0 2px 0 #000;
+  color: #c1cabe;
+}
+
+.thread {
+  background-color: #a5d5e7ff;
+  min-height: 100vh;
+}

@@ -1,0 +1,30 @@
+/* Climate Article*/
+.custom-card {
+  background-color: #f0f8ff;
+  border: 1px solid #008080;
+  border-radius: 10px;
+  font-family: "Modak";
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-title {
+  color: rgb(248, 187, 60);
+  font-size: 30px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+}
+
+.custom-button {
+  background-color: rgb(0, 162, 255);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+}
+
+.custom-button:hover {
+  background-color: rgb(0, 122, 192);
+  color: #fff;
+}
