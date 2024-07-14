@@ -2,21 +2,30 @@ import { useEffect, useState } from "react";
 import { Accordion } from "react-bootstrap";
 import "./styles/FAQ.css";
 
-const ClimateChangeFAQ = () => {
+const loadLocale = async (locale) => {
+  const response = await fetch(`/locales/${locale}.json`);
+  const data = await response.json();
+  return data;
+};
+
+const ClimateChangeFAQ = ({ locale }) => {
+  const [texts, setTexts] = useState({});
   const [faqItems, setFaqItems] = useState([]);
 
   useEffect(() => {
-    fetch("/faqData.json")
-      .then((response) => response.json())
-      .then((data) => setFaqItems(data))
-      .catch((error) => console.error("Error fetching the FAQ data:", error));
-  }, []);
+    const fetchTexts = async () => {
+      const loadedTexts = await loadLocale(locale);
+      setTexts(loadedTexts);
+      setFaqItems(loadedTexts.faqItems);
+    };
+    fetchTexts();
+  }, [locale]);
 
   return (
     <div className="faq-page-wrapper">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h1 className="faq-header">FAQ</h1>
+          <h1 className="faq-header">{texts.faqHeader}</h1>
         </div>
         <Accordion defaultActiveKey="0">
           {faqItems.map((item, index) => (

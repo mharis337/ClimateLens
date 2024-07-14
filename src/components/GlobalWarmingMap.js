@@ -1,8 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
 
-const GlobalWarmingMap = () => {
+const loadLocale = async (locale) => {
+  const response = await fetch(`/locales/${locale}.json`);
+  const data = await response.json();
+  return data;
+};
+
+const GlobalWarmingMap = ({ locale }) => {
   const [activeLayer, setActiveLayer] = useState('co2');
+  const [texts, setTexts] = useState({});
+
+  useEffect(() => {
+    const fetchTexts = async () => {
+      const loadedTexts = await loadLocale(locale);
+      setTexts(loadedTexts);
+    };
+    fetchTexts();
+  }, [locale]);
 
   const media = {
     co2: 'img/CO2.mp4',
@@ -21,10 +36,10 @@ const GlobalWarmingMap = () => {
         <Col>
           <ButtonGroup>
             {[
-              { name: 'CO2', value: 'co2' },
-              { name: 'Sea Levels', value: 'sea_levels' },
-              { name: 'Temperatures', value: 'temperatures' },
-              { name: 'Ocean Warming', value: 'ocean_warming' },
+              { name: texts.co2, value: 'co2' },
+              { name: texts.seaLevels, value: 'sea_levels' },
+              { name: texts.temperatures, value: 'temperatures' },
+              { name: texts.oceanWarming, value: 'ocean_warming' },
             ].map((radio, idx) => (
               <Button
                 key={idx}

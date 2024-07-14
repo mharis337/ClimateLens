@@ -2,22 +2,37 @@ import { useState, useEffect } from 'react';
 import { Container, Carousel, Row, Col } from 'react-bootstrap';
 import './styles/ClimateStats.css';
 
-const ClimateStats = () => {
+const loadLocale = async (locale) => {
+  const response = await fetch(`/locales/${locale}.json`);
+  const data = await response.json();
+  return data;
+};
+
+const ClimateStats = ({ locale }) => {
   const [index, setIndex] = useState(0);
   const [groupedStats, setGroupedStats] = useState([]);
+  const [texts, setTexts] = useState({});
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
 
+  useEffect(() => {
+    const fetchTexts = async () => {
+      const loadedTexts = await loadLocale(locale);
+      setTexts(loadedTexts);
+    };
+    fetchTexts();
+  }, [locale]);
+
   const stats = [
-    { title: 'Arctic Sea Ice Minimum Extent', value: '12.2', unit: 'percent per decade since 1979', trend: 'down' },
-    { title: 'Ice Sheets', value: '408', unit: 'billion metric tons per year', trend: 'down' },
-    { title: 'Sea Level', value: '4', unit: 'inches since January 1993', trend: 'up' },
-    { title: 'Ocean Warming', value: '360', unit: 'zettajoules since 1955', trend: 'up' },
-    { title: 'Carbon Dioxide', value: '427', unit: 'parts per million', trend: 'up' },
-    { title: 'Global Temperature', value: '1.4', unit: '°C since preindustrial', trend: 'up' },
-    { title: 'Methane', value: '1932', unit: 'parts per billion', trend: 'up' },
+    { title: texts.arcticSeaIceMinimumExtent, value: '12.2', unit: texts.percentPerDecade, trend: 'down' },
+    { title: texts.iceSheets, value: '408', unit: texts.billionMetricTonsPerYear, trend: 'down' },
+    { title: texts.seaLevel, value: '4', unit: texts.inchesSince1993, trend: 'up' },
+    { title: texts.oceanWarming, value: '360', unit: texts.zettajoulesSince1955, trend: 'up' },
+    { title: texts.carbonDioxide, value: '427', unit: texts.partsPerMillion, trend: 'up' },
+    { title: texts.globalTemperature, value: '1.4', unit: texts.degreesSincePreindustrial, trend: 'up' },
+    { title: texts.methane, value: '1932', unit: texts.partsPerBillion, trend: 'up' },
   ];
 
   useEffect(() => {
@@ -45,7 +60,7 @@ const ClimateStats = () => {
 
     return () => window.removeEventListener('resize', updateGrouping);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [texts]);
 
   return (
     <Container className="stat-colors" fluid>

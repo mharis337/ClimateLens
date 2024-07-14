@@ -1,12 +1,29 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import CardTypeA from './CardTypeA';
 import CardTypeB from './CardTypeB';
 import './styles/DiscussionBoard.css';
 
-const DiscussionBoard = ({ discussions, setDiscussions }) => {
+const loadLocale = async (locale) => {
+  const response = await fetch(`/locales/${locale}.json`);
+  const data = await response.json();
+  return data;
+};
+
+const DiscussionBoard = ({ discussions, setDiscussions, locale }) => {
   const navigate = useNavigate();
+  const [texts, setTexts] = useState({});
+  const [localizedDiscussions, setLocalizedDiscussions] = useState([]);
+
+  useEffect(() => {
+    const fetchTexts = async () => {
+      const loadedTexts = await loadLocale(locale);
+      setTexts(loadedTexts);
+      setLocalizedDiscussions(loadedTexts.discussions);
+    };
+    fetchTexts();
+  }, [locale]);
 
   useEffect(() => {
     if (discussions.length === 0) {
@@ -25,11 +42,11 @@ const DiscussionBoard = ({ discussions, setDiscussions }) => {
     <div className="discussion">
       <div className="container mt-5">
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h1 className="discTitle">Discussion Forum</h1>
-          <Button className="threadButton" onClick={handleStartNewThread}>Start New Thread</Button>
+          <h1 className="discTitle">{texts.discussionForum}</h1>
+          <Button className="threadButton" onClick={handleStartNewThread}>{texts.startNewThread}</Button>
         </div>
 
-        {discussions.map((discussion, index) => (
+        {localizedDiscussions.map((discussion, index) => (
           <div key={index}>
             <CardTypeA
               title={discussion.title}

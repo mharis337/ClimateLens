@@ -1,42 +1,52 @@
+import { useState, useEffect } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "./styles/ClimateArticle.css";
 
-const ClimateArticle = () => {
+const loadLocale = async (locale) => {
+  const response = await fetch(`/locales/${locale}.json`);
+  const data = await response.json();
+  return data;
+};
+
+const ClimateArticle = ({ locale }) => {
+  const [texts, setTexts] = useState({});
+
+  useEffect(() => {
+    const fetchTexts = async () => {
+      const loadedTexts = await loadLocale(locale);
+      setTexts(loadedTexts);
+    };
+    fetchTexts();
+  }, [locale]);
+
   const articles = [
     {
-      title: "Understanding Climate Change",
-      description:
-        "This article explores the fundamental concepts of climate change, its causes, and its effects on the planet.",
+      title: texts.article1Title,
+      description: texts.article1Description,
     },
     {
-      title: "Impact of Global Warming",
-      description:
-        "An in-depth analysis of how global warming affects ecosystems, weather patterns, and human life.",
+      title: texts.article2Title,
+      description: texts.article2Description,
     },
     {
-      title: "Renewable Energy Solutions",
-      description:
-        "Explore various renewable energy sources and how they can help mitigate the effects of climate change.",
+      title: texts.article3Title,
+      description: texts.article3Description,
     },
     {
-      title: "Climate Change and Wildlife",
-      description:
-        "Discover how climate change impacts wildlife habitats and the survival of various species.",
+      title: texts.article4Title,
+      description: texts.article4Description,
     },
     {
-      title: "Policies for a Greener Future",
-      description:
-        "Examine the policies and regulations aimed at combating climate change and promoting sustainability.",
+      title: texts.article5Title,
+      description: texts.article5Description,
     },
     {
-      title: "Technological Innovations",
-      description:
-        "Learn about cutting-edge technologies being developed to address climate change challenges.",
+      title: texts.article6Title,
+      description: texts.article6Description,
     },
     {
-      title: "Climate Change and Agriculture",
-      description:
-        "Understand the effects of climate change on agriculture and food security worldwide.",
+      title: texts.article7Title,
+      description: texts.article7Description,
     },
   ];
 
@@ -51,10 +61,8 @@ const ClimateArticle = () => {
                   <Card.Title className="custom-card-title">
                     {article.title}
                   </Card.Title>
-                  <Card.Text>
-                    {article.description}
-                  </Card.Text>
-                  <Button className="custom-button">Read More</Button>
+                  <Card.Text>{article.description}</Card.Text>
+                  <Button className="custom-button">{texts.button}</Button>
                 </Card.Body>
               </Card>
             </Col>

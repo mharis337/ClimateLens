@@ -1,83 +1,87 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
+import { useState, useEffect } from 'react';
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "./styles/Videos.css";
 
-const videos = [
-  {
-    title: "Climate change: Earth's giant game of Tetris - Joss Fong",
-    description:
-      "There's a game of Tetris happening on a global scale: The playing space is planet Earth, and all those pesky, stacking blocks represent carbon dioxide",
-    url: "https://www.youtube.com/embed/ztWHqUFJRTs",
-  },
-  {
-    title: "What's the Deal with Carbon?",
-    description:
-      "This animation describes the carbon cycle and how it is affected by human activity. It was featured in the Sustainable Shelters exhibit at the Bell Museum of Natural History at the University of Minnesota. Written by Rachel O'Malley...",
-    url: "https://www.youtube.com/embed/2Jp1D1dzxj8",
-  },
-  {
-    title: "Climate Science in a Nutshell #4: Too Much Carbon Dioxide",
-    description:
-      "View the complete Climate Science in a Nutshell Series at www.planetnutshell.com/climate What is the role of Carbon Dioxide in the atmosphere? What is the Greenhouse Effect?",
-    url: "https://www.youtube.com/embed/HK8LLWSIIm4",
-  },
-  {
-    title: "How 2023 Broke Our Climate Models with Neil deGrasse Tyson",
-    description:
-      "Why were climate models so wrong about 2023? Neil deGrasse Tyson learns about why 2023 was hotter than we expected it to be and what effects need to be factored into future climate...",
-    url: "https://www.youtube.com/embed/CHJKKsOHtAk",
-  },
-  {
-    title: "What Earth in 2050 could look like - Shannon Odell",
-    description:
-      "While we’re already feeling the devastating effects of human-caused climate change, governments continue to fall short on making and executing emissions ... ",
-    url: "https://www.youtube.com/embed/2njn71TqkjA",
-  },
-  {
-    title: "Climate Science in a Nutshell #5: Where Does Carbon Dioxide",
-    description:
-      "View the complete Climate Science in a Nutshell Series at www.planetnutshell.com/climate. Carbon Dioxide, the gas that's primarily responsible for warming up our planet, comes from our success.",
-    url: "https://www.youtube.com/embed/bpazvRVh4y0",
-  },
-  {
-    title: "Climate change: Earth's giant game of Tetris - Joss Fong",
-    description:
-      "There's a game of Tetris happening on a global scale: The playing space is planet Earth, and all those pesky, stacking blocks represent carbon dioxide",
-    url: "https://www.youtube.com/embed/ztWHqUFJRTs",
-  },
-  {
-    title: "What's the Deal with Carbon?",
-    description:
-      "This animation describes the carbon cycle and how it is affected by human activity. It was featured in the Sustainable Shelters exhibit at the Bell Museum of Natural History at the University of Minnesota. Written by Rachel O'Malley...",
-    url: "https://www.youtube.com/embed/2Jp1D1dzxj8",
-  },
-  {
-    title: "Climate Science in a Nutshell #4: Too Much Carbon Dioxide",
-    description:
-      "View the complete Climate Science in a Nutshell Series at www.planetnutshell.com/climate What is the role of Carbon Dioxide in the atmosphere? What is the Greenhouse Effect?",
-    url: "https://www.youtube.com/embed/HK8LLWSIIm4",
-  },
-  {
-    title: "How 2023 Broke Our Climate Models with Neil deGrasse Tyson",
-    description:
-      "Why were climate models so wrong about 2023? Neil deGrasse Tyson learns about why 2023 was hotter than we expected it to be and what effects need to be factored into future climate...",
-    url: "https://www.youtube.com/embed/CHJKKsOHtAk",
-  },
-  {
-    title: "What Earth in 2050 could look like - Shannon Odell",
-    description:
-      "While we’re already feeling the devastating effects of human-caused climate change, governments continue to fall short on making and executing emissions ... ",
-    url: "https://www.youtube.com/embed/2njn71TqkjA",
-  },
-  {
-    title: "Climate Science in a Nutshell #5: Where Does Carbon Dioxide",
-    description:
-      "View the complete Climate Science in a Nutshell Series at www.planetnutshell.com/climate. Carbon Dioxide, the gas that's primarily responsible for warming up our planet, comes from our success.",
-    url: "https://www.youtube.com/embed/bpazvRVh4y0",
-  },
-];
+const loadLocale = async (locale) => {
+  const response = await fetch(`/locales/${locale}.json`);
+  const data = await response.json();
+  return data;
+};
 
-const ClimateVideos = () => {
+const ClimateVideos = ({ locale }) => {
+  const [texts, setTexts] = useState({});
+
+  useEffect(() => {
+    const fetchTexts = async () => {
+      const loadedTexts = await loadLocale(locale);
+      setTexts(loadedTexts);
+    };
+    fetchTexts();
+  }, [locale]);
+
+  const videos = [
+    {
+      title: texts.video1Title,
+      description: texts.video1Description,
+      url: texts.video1Url,
+    },
+    {
+      title: texts.video2Title,
+      description: texts.video2Description,
+      url: texts.video2Url,
+    },
+    {
+      title: texts.video3Title,
+      description: texts.video3Description,
+      url: texts.video3Url,
+    },
+    {
+      title: texts.video4Title,
+      description: texts.video4Description,
+      url: texts.video4Url,
+    },
+    {
+      title: texts.video5Title,
+      description: texts.video5Description,
+      url: texts.video5Url,
+    },
+    {
+      title: texts.video6Title,
+      description: texts.video6Description,
+      url: texts.video6Url,
+    },
+    {
+      title: texts.video1Title,
+      description: texts.video1Description,
+      url: texts.video1Url,
+    },
+    {
+      title: texts.video2Title,
+      description: texts.video2Description,
+      url: texts.video2Url,
+    },
+    {
+      title: texts.video3Title,
+      description: texts.video3Description,
+      url: texts.video3Url,
+    },
+    {
+      title: texts.video4Title,
+      description: texts.video4Description,
+      url: texts.video4Url,
+    },
+    {
+      title: texts.video5Title,
+      description: texts.video5Description,
+      url: texts.video5Url,
+    },
+    {
+      title: texts.video6Title,
+      description: texts.video6Description,
+      url: texts.video6Url,
+    },
+  ];
+
   return (
     <div style={{ background: "#a5d5e7ff" }}>
       <Container fluid style={{ paddingTop: "20px", paddingBottom: "20px" }}>

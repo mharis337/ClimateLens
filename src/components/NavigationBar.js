@@ -9,21 +9,13 @@ const loadLocale = async (locale) => {
   return data;
 };
 
-const NavigationBar = ({ onToggle }) => {
+const NavigationBar = ({ onToggle, onLanguageChange, locale }) => {
   const [expanded, setExpanded] = useState(false);
-  const [locale, setLocale] = useState('en');
   const [texts, setTexts] = useState({});
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleToggle = () => {
     setExpanded(!expanded);
-  };
-
-  const handleLanguageChange = async () => {
-    const newLocale = locale === 'en' ? 'fr' : 'en';
-    setLocale(newLocale);
-    const loadedTexts = await loadLocale(newLocale);
-    setTexts(loadedTexts);
   };
 
   useEffect(() => {
@@ -99,7 +91,7 @@ const NavigationBar = ({ onToggle }) => {
                 <button className="donateButton">{texts.donate}</button>
               </Col>
               <Col>
-                <button className="languageButton" onClick={handleLanguageChange}>
+                <button className="languageButton" onClick={onLanguageChange}>
                   {locale === 'en' ? 'FR' : 'EN'}
                 </button>
               </Col>

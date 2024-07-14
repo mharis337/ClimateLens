@@ -6,6 +6,399 @@
     "faq": "FAQ",
     "events": "Événements",
     "donate": "Faire un don",
-    "lang": "EN"
+    "lang": "EN",
+    "understandingClimateChange": "Comprendre le changement climatique",
+    "climateChangeImpact": "Explorez les bases et la science derrière le changement climatique et son impact sur notre planète.",
+    "renewableEnergySolutions": "Solutions d'énergie renouvelable",
+    "renewableEnergyAdvancements": "Découvrez les dernières avancées en matière d'énergie renouvelable et comment elles peuvent aider à lutter contre le changement climatique.",
+    "takeAction": "Passer à l'action",
+    "sustainablePractices": "Apprenez comment vous pouvez faire une différence en adoptant des pratiques durables dans votre vie quotidienne.",
+    "arcticSeaIceMinimumExtent": "Étendue minimale de la glace de mer arctique",
+    "iceSheets": "Calottes glaciaires",
+    "seaLevel": "Niveau de la mer",
+    "oceanWarming": "Réchauffement des océans",
+    "carbonDioxide": "Dioxyde de carbone",
+    "globalTemperature": "Température globale",
+    "methane": "Méthane",
+    "percentPerDecade": "pourcentage par décennie depuis 1979",
+    "billionMetricTonsPerYear": "milliards de tonnes métriques par an",
+    "inchesSince1993": "pouces depuis janvier 1993",
+    "zettajoulesSince1955": "zettajoules depuis 1955",
+    "partsPerMillion": "parties par million",
+    "degreesSincePreindustrial": "°C depuis l'ère préindustrielle",
+    "partsPerBillion": "parties par milliard",
+    "maps": "Cartes",
+    "charts": "Graphiques",
+    "resources": "Ressources",
+    "videos": "Vidéos",
+    "articles": "Articles",
+    "co2": "CO2",
+    "seaLevels": "Niveaux de la mer",
+    "temperatures": "Températures",
+    "oceanWarming": "Réchauffement des océans",
+    "co2VsTemperature": "CO2 vs Température",
+    "iceMelt": "Fonte des glaces",
+    "video1Title": "Changement climatique : Le grand jeu de Tetris de la Terre - Joss Fong",
+    "video1Description": "Il y a un jeu de Tetris à l'échelle mondiale : l'espace de jeu est la planète Terre, et tous ces blocs embêtants qui s'empilent représentent le dioxyde de carbone",
+    "video1Url": "https://www.youtube.com/embed/ztWHqUFJRTs",
+    "video2Title": "Quel est le problème avec le carbone ?",
+    "video2Description": "Cette animation décrit le cycle du carbone et comment il est affecté par l'activité humaine. Il a été présenté dans l'exposition abris durables au Bell Museum of Natural History de l'Université du Minnesota. Écrit par Rachel O'Malley...",
+    "video2Url": "https://www.youtube.com/embed/2Jp1D1dzxj8",
+    "video3Title": "La science du climat en bref #4 : Trop de dioxyde de carbone",
+    "video3Description": "Voir la série complète Climate Science in a Nutshell sur www.planetnutshell.com/climate Quel est le rôle du dioxyde de carbone dans l'atmosphère ? Qu'est-ce que l'effet de serre ?",
+    "video3Url": "https://www.youtube.com/embed/HK8LLWSIIm4",
+    "video4Title": "Comment 2023 a brisé nos modèles climatiques avec Neil deGrasse Tyson",
+    "video4Description": "Pourquoi les modèles climatiques étaient-ils si erronés en 2023 ? Neil deGrasse Tyson apprend pourquoi 2023 était plus chaud que prévu et quels effets doivent être pris...",
+    "video4Url": "https://www.youtube.com/embed/CHJKKsOHtAk",
+    "video5Title": "À quoi pourrait ressembler la Terre en 2050 - Shannon Odell",
+    "video5Description": "Alors que nous ressentons déjà les effets dévastateurs du changement climatique causé par l'homme, les gouvernements continuent de ne pas atteindre les objectifs de réduction... ",
+    "video5Url": "https://www.youtube.com/embed/2njn71TqkjA",
+    "video6Title": "La science du climat en bref #5 : D'où vient le dioxyde de carbone",
+    "video6Description": "Voir la série complète Climate Science in a Nutshell sur www.planetnutshell.com/climate. Le dioxyde de carbone, le gaz principalement responsable du réchauffement...",
+    "video6Url": "https://www.youtube.com/embed/bpazvRVh4y0",
+    "article1Title": "Comprendre le changement climatique",
+    "article1Description": "Cet article explore les concepts fondamentaux du changement climatique, ses causes et ses effets sur la planète.",
+    "article2Title": "Impact du réchauffement climatique",
+    "article2Description": "Une analyse approfondie de l'impact du réchauffement climatique sur les écosystèmes, les régimes météorologiques et la vie humaine.",
+    "article3Title": "Solutions d'énergie renouvelable",
+    "article3Description": "Explorez diverses sources d'énergie renouvelable et comment elles peuvent aider à atténuer les effets du changement climatique.",
+    "article4Title": "Changement climatique et faune",
+    "article4Description": "Découvrez comment le changement climatique affecte les habitats fauniques et la survie de diverses espèces.",
+    "article5Title": "Politiques pour un avenir plus vert",
+    "article5Description": "Examinez les politiques et réglementations visant à lutter contre le changement climatique et à promouvoir la durabilité.",
+    "article6Title": "Innovations technologiques",
+    "article6Description": "Découvrez les technologies de pointe en cours de développement pour relever les défis du changement climatique.",
+    "article7Title": "Changement climatique et agriculture",
+    "article7Description": "Comprenez les effets du changement climatique sur l'agriculture et la sécurité alimentaire dans le monde entier.",
+    "button" : "En savoir plus",
+    "newsHeader": "Actualités sur le changement climatique",
+    "publishedOn": "Publié le",
+    "by": "par",
+    "readMore": "Lire la suite",
+    "favorite": "Favori",
+    "share": "Partager",
+    "newsArticle": [
+    {
+      "title": "Réchauffement climatique : ce que vous devez savoir",
+      "date": "2024-06-20",
+      "author": "ClimateReporter",
+      "description": "Un regard complet sur l'état actuel du réchauffement climatique et ce que l'avenir nous réserve.",
+      "link": "#"
+    },
+    {
+      "title": "Énergie renouvelable : l'avenir, c'est maintenant",
+      "date": "2024-06-21",
+      "author": "EcoJournalist",
+      "description": "Explorer les dernières avancées des technologies d'énergie renouvelable et leur impact sur l'environnement.",
+      "link": "#"
+    },
+    {
+      "title": "Le changement climatique et son impact sur les villes côtières",
+      "date": "2024-06-22",
+      "author": "SeaGuardian",
+      "description": "Une analyse approfondie de la façon dont l'élévation du niveau de la mer affecte les villes côtières du monde entier.",
+      "link": "#"
+    },
+    {
+      "title": "L'économie du changement climatique",
+      "date": "2024-06-23",
+      "author": "GreenEconomist",
+      "description": "Comment le changement climatique influence les économies mondiales et quelles mesures sont prises pour atténuer ses effets.",
+      "link": "#"
+    },
+    {
+      "title": "Innovations en science du climat",
+      "date": "2024-06-24",
+      "author": "ScienceDaily",
+      "description": "Les dernières percées scientifiques qui pourraient nous aider à mieux comprendre et combattre le changement climatique.",
+      "link": "#"
+    },
+    {
+      "title": "Politiques climatiques à travers le monde",
+      "date": "2024-06-25",
+      "author": "PolicyWatch",
+      "description": "Une étude comparative des approches de différents pays pour lutter contre le changement climatique.",
+      "link": "#"
+    },
+    {
+      "title": "Le rôle des forêts dans l'atténuation du climat",
+      "date": "2024-06-26",
+      "author": "NatureConservancy",
+      "description": "Comment la préservation et l'expansion des forêts peuvent aider à réduire les émissions de carbone et combattre le changement climatique.",
+      "link": "#"
+    },
+    {
+      "title": "Le changement climatique et l'agriculture",
+      "date": "2024-06-27",
+      "author": "AgriFuture",
+      "description": "Les effets du changement climatique sur l'agriculture mondiale et la sécurité alimentaire.",
+      "link": "#"
+    },
+    {
+      "title": "Les impacts du changement climatique sur la santé humaine",
+      "date": "2024-06-28",
+      "author": "HealthToday",
+      "description": "Examiner comment le changement climatique affecte la santé humaine et ce qui peut être fait pour protéger les populations vulnérables.",
+      "link": "#"
+    },
+    {
+      "title": "L'activisme des jeunes et le changement climatique",
+      "date": "2024-06-29",
+      "author": "YouthVoice",
+      "description": "Le mouvement croissant des jeunes qui plaident pour une action climatique plus forte.",
+      "link": "#"
+    },
+    {
+      "title": "L'avenir du changement climatique : prévisions et scénarios",
+      "date": "2024-06-30",
+      "author": "FutureForecast",
+      "description": "Explorer différents scénarios pour l'avenir de notre planète basés sur les tendances actuelles du changement climatique.",
+      "link": "#"
+    }
+  ],
+  "discussionForum": "Forum de discussion",
+  "startNewThread": "Commencer un nouveau fil",
+  "discussions": [
+    {
+      "title": "Impact de la déforestation sur le changement climatique",
+      "description": "Discussion sur la façon dont la déforestation contribue au changement climatique et ce qui peut être fait pour atténuer ses effets.",
+      "author": "JaneDoe",
+      "date": "2024-06-20",
+      "replies": 15,
+      "posts": [
+        {
+          "author": "EnvironmentEnthusiast",
+          "time": "Il y a 2 heures",
+          "platform": "Twitter",
+          "content": "Rejoignez la conversation et aidez à faire une différence!",
+          "tags": ["Activisme", "Sensibilisation"]
+        }
+      ]
+    },
+    {
+      "title": "Sources d'énergie renouvelable : avantages et inconvénients",
+      "description": "Les deux ont leurs mérites, mais lequel est plus durable à long terme?",
+      "author": "GreenTechGuru",
+      "date": "2024-06-21",
+      "replies": 22,
+      "posts": [
+        {
+          "author": "TechEnthusiast",
+          "time": "Il y a 3 heures",
+          "platform": "Twitter",
+          "content": "L'énergie solaire et éolienne sont d'excellentes options!",
+          "tags": ["Solaire", "Éolien", "Énergie"]
+        }
+      ]
+    },
+    {
+      "title": "L'avenir des véhicules électriques",
+      "description": "Exploration des avancées et des défis dans l'industrie des véhicules électriques.",
+      "author": "AutoExpert",
+      "date": "2024-06-22",
+      "replies": 30,
+      "posts": [
+        {
+          "author": "EVFan",
+          "time": "Il y a 4 heures",
+          "platform": "Twitter",
+          "content": "Excité par les nouvelles technologies de batteries!",
+          "tags": ["VéhiculesÉlectriques", "Technologie"]
+        }
+      ]
+    },
+    {
+      "title": "Pratiques agricoles durables",
+      "description": "Comment les agriculteurs peuvent-ils adopter des pratiques durables pour protéger l'environnement?",
+      "author": "AgriSpecialist",
+      "date": "2024-06-23",
+      "replies": 18,
+      "posts": [
+        {
+          "author": "FarmerJohn",
+          "time": "Il y a 5 heures",
+          "platform": "Twitter",
+          "content": "Les cultures de couverture sont une révolution!",
+          "tags": ["Durabilité", "Agriculture"]
+        }
+      ]
+    },
+    {
+      "title": "Pollution plastique : causes et solutions",
+      "description": "Un regard approfondi sur la crise de la pollution plastique et les solutions possibles.",
+      "author": "EcoWarrior",
+      "date": "2024-06-24",
+      "replies": 25,
+      "posts": [
+        {
+          "author": "CleanSeas",
+          "time": "Il y a 6 heures",
+          "platform": "Twitter",
+          "content": "Les plastiques à usage unique devraient être interdits!",
+          "tags": ["Pollution", "Plastiques"]
+        }
+      ]
+    },
+    {
+      "title": "Espaces verts urbains et leurs avantages",
+      "description": "L'importance des espaces verts dans les zones urbaines pour la santé et le bien-être.",
+      "author": "CityPlanner",
+      "date": "2024-06-25",
+      "replies": 20,
+      "posts": [
+        {
+          "author": "NatureLover",
+          "time": "Il y a 7 heures",
+          "platform": "Twitter",
+          "content": "Les parcs sont essentiels pour la vie en ville!",
+          "tags": ["Urbanisme", "EspacesVerts"]
+        }
+      ]
+    },
+    {
+      "title": "Techniques de conservation de l'eau",
+      "description": "Méthodes efficaces pour conserver l'eau dans la vie quotidienne et l'agriculture.",
+      "author": "HydroExpert",
+      "date": "2024-06-26",
+      "replies": 12,
+      "posts": [
+        {
+          "author": "WaterSaver",
+          "time": "Il y a 8 heures",
+          "platform": "Twitter",
+          "content": "L'irrigation goutte à goutte est très efficace!",
+          "tags": ["Conservation", "Eau"]
+        }
+      ]
+    },
+    {
+      "title": "Politique climatique : que faut-il faire?",
+      "description": "Discussion sur les politiques nécessaires pour lutter efficacement contre le changement climatique.",
+      "author": "PolicyMaker",
+      "date": "2024-06-27",
+      "replies": 28,
+      "posts": [
+        {
+          "author": "ClimateActivist",
+          "time": "Il y a 9 heures",
+          "platform": "Twitter",
+          "content": "Des réglementations plus strictes sont nécessaires!",
+          "tags": ["PolitiqueClimatique", "Régulation"]
+        }
+      ]
+    },
+    {
+      "title": "Efforts de conservation de la faune",
+      "description": "Comment protéger les espèces en voie de disparition et conserver la biodiversité.",
+      "author": "WildlifeExpert",
+      "date": "2024-06-28",
+      "replies": 16,
+      "posts": [
+        {
+          "author": "AnimalLover",
+          "time": "Il y a 10 heures",
+          "platform": "Twitter",
+          "content": "La protection des habitats est essentielle!",
+          "tags": ["Conservation", "Biodiversité"]
+        }
+      ]
+    },
+    {
+      "title": "Le rôle de la technologie dans la protection de l'environnement",
+      "description": "Examen de la façon dont la technologie peut aider aux efforts de conservation de l'environnement.",
+      "author": "TechEnviro",
+      "date": "2024-06-29",
+      "replies": 35,
+      "posts": [
+        {
+          "author": "Innovator",
+          "time": "Il y a 11 heures",
+          "platform": "Twitter",
+          "content": "Les solutions innovantes sont l'avenir!",
+          "tags": ["Technologie", "Environnement"]
+        }
+      ]
+    }
+  ],
+  "faqHeader": "FAQ",
+  "faqItems": [
+    {
+      "question": "Qu'est-ce que le changement climatique?",
+      "answer": "Le changement climatique désigne des modifications significatives des températures mondiales et des régimes météorologiques au fil du temps. Bien que le changement climatique soit un phénomène naturel, les preuves scientifiques montrent que les activités humaines provoquent actuellement un taux de changement sans précédent."
+    },
+    {
+      "question": "Quelles sont les principales causes du changement climatique?",
+      "answer": "Les principales causes du changement climatique sont les activités humaines, telles que la combustion de combustibles fossiles (charbon, pétrole et gaz naturel), la déforestation et les processus industriels, qui augmentent la concentration de gaz à effet de serre dans l'atmosphère."
+    },
+    {
+      "question": "Comment le changement climatique affecte-t-il l'environnement?",
+      "answer": "Le changement climatique affecte l'environnement de nombreuses manières, notamment des événements météorologiques plus fréquents et plus graves, l'élévation du niveau de la mer, la fonte des glaciers et des calottes glaciaires, des changements dans les écosystèmes et les habitats fauniques, et une acidité accrue des océans."
+    },
+    {
+      "question": "Que peuvent faire les individus pour lutter contre le changement climatique?",
+      "answer": "Les individus peuvent lutter contre le changement climatique en réduisant leur consommation d'énergie, en utilisant des sources d'énergie renouvelables, en minimisant les déchets, en soutenant des pratiques durables, en plaidant pour des changements de politique et en sensibilisant à la question."
+    },
+    {
+      "question": "Qu'est-ce que l'Accord de Paris?",
+      "answer": "L'Accord de Paris est un traité international adopté en 2015, visant à limiter le réchauffement climatique bien en dessous de 2 degrés Celsius par rapport aux niveaux préindustriels, avec des efforts pour le maintenir à 1,5 degrés Celsius. Les pays s'engagent à réduire leurs émissions de gaz à effet de serre et à renforcer leur résilience aux impacts climatiques."
+    },
+    {
+      "question": "Comment la déforestation contribue-t-elle au changement climatique?",
+      "answer": "La déforestation contribue au changement climatique en réduisant le nombre d'arbres pouvant absorber le dioxyde de carbone de l'atmosphère. Lorsque les forêts sont défrichées, le carbone stocké dans les arbres est libéré dans l'atmosphère sous forme de dioxyde de carbone, un gaz à effet de serre."
+    },
+    {
+      "question": "Quels sont les impacts économiques du changement climatique?",
+      "answer": "Le changement climatique a des impacts économiques significatifs, notamment des dommages aux biens et aux infrastructures dus aux événements météorologiques extrêmes, des coûts accrus pour les secours et la récupération après les catastrophes, une baisse de la productivité agricole et des changements dans la demande et l'offre d'énergie."
+    },
+    {
+      "question": "Comment le changement climatique affecte-t-il la santé humaine?",
+      "answer": "Le changement climatique affecte la santé humaine par une augmentation des maladies liées à la chaleur, des problèmes respiratoires dus à la mauvaise qualité de l'air, la propagation des maladies infectieuses, l'insécurité alimentaire et hydrique, et les problèmes de santé mentale liés au stress et au déplacement dus au climat."
+    },
+    {
+      "question": "Quel est le rôle des énergies renouvelables dans la lutte contre le changement climatique?",
+      "answer": "Les énergies renouvelables jouent un rôle crucial dans la lutte contre le changement climatique en fournissant des alternatives plus propres aux combustibles fossiles. Les sources d'énergie solaire, éolienne, hydraulique et géothermique produisent peu ou pas d'émissions de gaz à effet de serre et peuvent aider à réduire notre dépendance aux sources d'énergie à forte intensité de carbone."
+    },
+    {
+      "question": "Pourquoi est-il important de s'attaquer au changement climatique maintenant?",
+      "answer": "Il est important de s'attaquer au changement climatique maintenant pour atténuer ses impacts les plus sévères, protéger les écosystèmes, assurer un avenir durable pour les générations futures et minimiser les coûts économiques et sanitaires. Une action précoce augmente l'efficacité des efforts d'atténuation et d'adaptation."
+    }
+  ],
+  "eventsTitle": "Événements à venir",
+  "createNewEvent": "Créer un nouvel événement",
+  "joinEvent": "Rejoindre l'événement",
+  "climateEvents": [
+    {
+      "title": "Marche de sensibilisation au changement climatique",
+      "description": "Rejoignez-nous pour une marche à travers la ville pour sensibiliser au changement climatique et à son impact sur notre environnement.",
+      "organizer": "Terre Verte",
+      "date": "2024-07-15",
+      "participants": 150
+    },
+    {
+      "title": "Journée de plantation d'arbres",
+      "description": "Participez à notre événement de plantation d'arbres pour aider à restaurer nos forêts et à lutter contre le changement climatique.",
+      "organizer": "Guerriers Écologiques",
+      "date": "2024-08-01",
+      "participants": 200
+    },
+    {
+      "title": "Atelier sur les énergies renouvelables",
+      "description": "Assistez à notre atelier pour en savoir plus sur les sources d'énergie renouvelable et comment elles peuvent aider à réduire les émissions de carbone.",
+      "organizer": "Futur Durable",
+      "date": "2024-07-25",
+      "participants": 75
+    },
+    {
+      "title": "Nettoyage de plage",
+      "description": "Rejoignez notre événement communautaire de nettoyage de plage pour aider à éliminer les déchets plastiques et protéger la vie marine.",
+      "organizer": "Gardiens des Océans",
+      "date": "2024-07-20",
+      "participants": 100
+    }
+  ],
+  "footerCopyright": "© 2024 ClimateLens. Tous droits réservés",
+  "footerPrivacyPolicy": "Politique de confidentialité",
+  "footerTermsConditions": "Termes & Conditions"
+
   }
   

@@ -6,6 +6,399 @@
     "faq": "FAQ",
     "events": "Events",
     "donate": "Donate",
-    "lang": "FR"
+    "lang": "FR",
+    "understandingClimateChange": "Understanding Climate Change",
+    "climateChangeImpact": "Explore the basics and science behind climate change and its impact on our planet.",
+    "renewableEnergySolutions": "Renewable Energy Solutions",
+    "renewableEnergyAdvancements": "Discover the latest advancements in renewable energy and how they can help combat climate change.",
+    "takeAction": "Take Action",
+    "sustainablePractices": "Learn how you can make a difference by adopting sustainable practices in your daily life.",
+    "arcticSeaIceMinimumExtent": "Arctic Sea Ice Minimum Extent",
+    "iceSheets": "Ice Sheets",
+    "seaLevel": "Sea Level",
+    "oceanWarming": "Ocean Warming",
+    "carbonDioxide": "Carbon Dioxide",
+    "globalTemperature": "Global Temperature",
+    "methane": "Methane",
+    "percentPerDecade": "percent per decade since 1979",
+    "billionMetricTonsPerYear": "billion metric tons per year",
+    "inchesSince1993": "inches since January 1993",
+    "zettajoulesSince1955": "zettajoules since 1955",
+    "partsPerMillion": "parts per million",
+    "degreesSincePreindustrial": "°C since preindustrial",
+    "partsPerBillion": "parts per billion",
+    "maps": "Maps",
+    "charts": "Charts",
+    "resources": "Resources",
+    "videos": "Videos",
+    "articles": "Articles",
+    "co2": "CO2",
+    "seaLevels": "Sea Levels",
+    "temperatures": "Temperatures",
+    "oceanWarming": "Ocean Warming",
+    "co2VsTemperature": "CO2 vs Temperature",
+    "iceMelt": "Ice Melt",
+    "video1Title": "Climate change: Earth's giant game of Tetris - Joss Fong",
+    "video1Description": "There's a game of Tetris happening on a global scale: The playing space is planet Earth, and all those pesky, stacking blocks represent carbon dioxide",
+    "video1Url": "https://www.youtube.com/embed/ztWHqUFJRTs",
+    "video2Title": "What's the Deal with Carbon?",
+    "video2Description": "This animation describes the carbon cycle and how it is affected by human activity. It was featured in the Sustainable Shelters exhibit at the Bell Museum of Natural History at the University of Minnesota. Written by Rachel O'Malley...",
+    "video2Url": "https://www.youtube.com/embed/2Jp1D1dzxj8",
+    "video3Title": "Climate Science in a Nutshell #4: Too Much Carbon Dioxide",
+    "video3Description": "View the complete Climate Science in a Nutshell Series at www.planetnutshell.com/climate What is the role of Carbon Dioxide in the atmosphere? What is the Greenhouse Effect?",
+    "video3Url": "https://www.youtube.com/embed/HK8LLWSIIm4",
+    "video4Title": "How 2023 Broke Our Climate Models with Neil deGrasse Tyson",
+    "video4Description": "Why were climate models so wrong about 2023? Neil deGrasse Tyson learns about why 2023 was hotter than we expected it to be and what effects need to be factored into future climate...",
+    "video4Url": "https://www.youtube.com/embed/CHJKKsOHtAk",
+    "video5Title": "What Earth in 2050 could look like - Shannon Odell",
+    "video5Description": "While we’re already feeling the devastating effects of human-caused climate change, governments continue to fall short on making and executing emissions ... ",
+    "video5Url": "https://www.youtube.com/embed/2njn71TqkjA",
+    "video6Title": "Climate Science in a Nutshell #5: Where Does Carbon Dioxide",
+    "video6Description": "View the complete Climate Science in a Nutshell Series at www.planetnutshell.com/climate. Carbon Dioxide, the gas that's primarily responsible for warming up our planet, comes from our success.",
+    "video6Url": "https://www.youtube.com/embed/bpazvRVh4y0",
+    "article1Title": "Understanding Climate Change",
+    "article1Description": "This article explores the fundamental concepts of climate change, its causes, and its effects on the planet.",
+    "article2Title": "Impact of Global Warming",
+    "article2Description": "An in-depth analysis of how global warming affects ecosystems, weather patterns, and human life.",
+    "article3Title": "Renewable Energy Solutions",
+    "article3Description": "Explore various renewable energy sources and how they can help mitigate the effects of climate change.",
+    "article4Title": "Climate Change and Wildlife",
+    "article4Description": "Discover how climate change impacts wildlife habitats and the survival of various species.",
+    "article5Title": "Policies for a Greener Future",
+    "article5Description": "Examine the policies and regulations aimed at combating climate change and promoting sustainability.",
+    "article6Title": "Technological Innovations",
+    "article6Description": "Learn about cutting-edge technologies being developed to address climate change challenges.",
+    "article7Title": "Climate Change and Agriculture",
+    "article7Description": "Understand the effects of climate change on agriculture and food security worldwide.",
+    "button" : "Read More",
+    "newsHeader": "Climate Change News",
+    "publishedOn": "Published on",
+    "by": "by",
+    "readMore": "Read more",
+    "favorite": "Favorite",
+    "share": "Share",
+    "newsArticle": [
+    {
+      "title": "Global Warming: What You Need to Know",
+      "date": "2024-06-20",
+      "author": "ClimateReporter",
+      "description": "A comprehensive look at the current state of global warming and what the future holds.",
+      "link": "#"
+    },
+    {
+      "title": "Renewable Energy: The Future is Now",
+      "date": "2024-06-21",
+      "author": "EcoJournalist",
+      "description": "Exploring the latest advancements in renewable energy technologies and their impact on the environment.",
+      "link": "#"
+    },
+    {
+      "title": "Climate Change and Its Impact on Coastal Cities",
+      "date": "2024-06-22",
+      "author": "SeaGuardian",
+      "description": "An in-depth analysis of how rising sea levels are affecting coastal cities worldwide.",
+      "link": "#"
+    },
+    {
+      "title": "The Economics of Climate Change",
+      "date": "2024-06-23",
+      "author": "GreenEconomist",
+      "description": "How climate change is influencing global economies and what measures are being taken to mitigate its effects.",
+      "link": "#"
+    },
+    {
+      "title": "Innovations in Climate Science",
+      "date": "2024-06-24",
+      "author": "ScienceDaily",
+      "description": "The latest scientific breakthroughs that could help us better understand and combat climate change.",
+      "link": "#"
+    },
+    {
+      "title": "Climate Change Policies Around the World",
+      "date": "2024-06-25",
+      "author": "PolicyWatch",
+      "description": "A comparative study of different countries' approaches to tackling climate change.",
+      "link": "#"
+    },
+    {
+      "title": "The Role of Forests in Climate Mitigation",
+      "date": "2024-06-26",
+      "author": "NatureConservancy",
+      "description": "How preserving and expanding forests can help reduce carbon emissions and combat climate change.",
+      "link": "#"
+    },
+    {
+      "title": "Climate Change and Agriculture",
+      "date": "2024-06-27",
+      "author": "AgriFuture",
+      "description": "The effects of climate change on global agriculture and food security.",
+      "link": "#"
+    },
+    {
+      "title": "The Human Health Impacts of Climate Change",
+      "date": "2024-06-28",
+      "author": "HealthToday",
+      "description": "Examining how climate change is affecting human health and what can be done to protect vulnerable populations.",
+      "link": "#"
+    },
+    {
+      "title": "Youth Activism and Climate Change",
+      "date": "2024-06-29",
+      "author": "YouthVoice",
+      "description": "The growing movement of young people advocating for stronger climate action.",
+      "link": "#"
+    },
+    {
+      "title": "The Future of Climate Change: Predictions and Scenarios",
+      "date": "2024-06-30",
+      "author": "FutureForecast",
+      "description": "Exploring different scenarios for the future of our planet based on current climate change trends.",
+      "link": "#"
+    }
+  ],
+  "discussionForum": "Discussion Forum",
+  "startNewThread": "Start New Thread",
+  "discussions": [
+    {
+      "title": "Impact of Deforestation on Climate Change",
+      "description": "Discussion on how deforestation contributes to climate change and what can be done to mitigate its effects.",
+      "author": "JaneDoe",
+      "date": "2024-06-20",
+      "replies": 15,
+      "posts": [
+        {
+          "author": "EnvironmentEnthusiast",
+          "time": "2 hours ago",
+          "platform": "Twitter",
+          "content": "Join the conversation and help make a difference!",
+          "tags": ["Activism", "Awareness"]
+        }
+      ]
+    },
+    {
+      "title": "Renewable Energy Sources: Pros and Cons",
+      "description": "Both have their merits, but which one is more sustainable in the long run?",
+      "author": "GreenTechGuru",
+      "date": "2024-06-21",
+      "replies": 22,
+      "posts": [
+        {
+          "author": "TechEnthusiast",
+          "time": "3 hours ago",
+          "platform": "Twitter",
+          "content": "Solar and wind energy are great options!",
+          "tags": ["Solar", "Wind", "Energy"]
+        }
+      ]
+    },
+    {
+      "title": "The Future of Electric Vehicles",
+      "description": "Exploring the advancements and challenges in the electric vehicle industry.",
+      "author": "AutoExpert",
+      "date": "2024-06-22",
+      "replies": 30,
+      "posts": [
+        {
+          "author": "EVFan",
+          "time": "4 hours ago",
+          "platform": "Twitter",
+          "content": "Excited about the new battery technologies!",
+          "tags": ["ElectricVehicles", "Technology"]
+        }
+      ]
+    },
+    {
+      "title": "Sustainable Agriculture Practices",
+      "description": "How can farmers adopt sustainable practices to protect the environment?",
+      "author": "AgriSpecialist",
+      "date": "2024-06-23",
+      "replies": 18,
+      "posts": [
+        {
+          "author": "FarmerJohn",
+          "time": "5 hours ago",
+          "platform": "Twitter",
+          "content": "Cover crops are a game changer!",
+          "tags": ["Sustainability", "Agriculture"]
+        }
+      ]
+    },
+    {
+      "title": "Plastic Pollution: Causes and Solutions",
+      "description": "An in-depth look at the plastic pollution crisis and possible solutions.",
+      "author": "EcoWarrior",
+      "date": "2024-06-24",
+      "replies": 25,
+      "posts": [
+        {
+          "author": "CleanSeas",
+          "time": "6 hours ago",
+          "platform": "Twitter",
+          "content": "Single-use plastics should be banned!",
+          "tags": ["Pollution", "Plastics"]
+        }
+      ]
+    },
+    {
+      "title": "Urban Green Spaces and Their Benefits",
+      "description": "The importance of green spaces in urban areas for health and well-being.",
+      "author": "CityPlanner",
+      "date": "2024-06-25",
+      "replies": 20,
+      "posts": [
+        {
+          "author": "NatureLover",
+          "time": "7 hours ago",
+          "platform": "Twitter",
+          "content": "Parks are essential for city living!",
+          "tags": ["UrbanPlanning", "GreenSpaces"]
+        }
+      ]
+    },
+    {
+      "title": "Water Conservation Techniques",
+      "description": "Effective methods to conserve water in daily life and agriculture.",
+      "author": "HydroExpert",
+      "date": "2024-06-26",
+      "replies": 12,
+      "posts": [
+        {
+          "author": "WaterSaver",
+          "time": "8 hours ago",
+          "platform": "Twitter",
+          "content": "Drip irrigation is highly efficient!",
+          "tags": ["Conservation", "Water"]
+        }
+      ]
+    },
+    {
+      "title": "Climate Change Policy: What Needs to be Done?",
+      "description": "Discussion on the policies required to combat climate change effectively.",
+      "author": "PolicyMaker",
+      "date": "2024-06-27",
+      "replies": 28,
+      "posts": [
+        {
+          "author": "ClimateActivist",
+          "time": "9 hours ago",
+          "platform": "Twitter",
+          "content": "Stronger regulations are necessary!",
+          "tags": ["ClimatePolicy", "Regulation"]
+        }
+      ]
+    },
+    {
+      "title": "Wildlife Conservation Efforts",
+      "description": "How to protect endangered species and conserve biodiversity.",
+      "author": "WildlifeExpert",
+      "date": "2024-06-28",
+      "replies": 16,
+      "posts": [
+        {
+          "author": "AnimalLover",
+          "time": "10 hours ago",
+          "platform": "Twitter",
+          "content": "Habitat protection is key!",
+          "tags": ["Conservation", "Biodiversity"]
+        }
+      ]
+    },
+    {
+      "title": "The Role of Technology in Environmental Protection",
+      "description": "Examining how technology can aid in environmental conservation efforts.",
+      "author": "TechEnviro",
+      "date": "2024-06-29",
+      "replies": 35,
+      "posts": [
+        {
+          "author": "Innovator",
+          "time": "11 hours ago",
+          "platform": "Twitter",
+          "content": "Innovative solutions are the future!",
+          "tags": ["Technology", "Environment"]
+        }
+      ]
+    }
+  ],
+  "faqHeader": "FAQ",
+  "faqItems": [
+    {
+      "question": "What is climate change?",
+      "answer": "Climate change refers to significant changes in global temperatures and weather patterns over time. While climate change is a natural phenomenon, scientific evidence shows that human activities are currently driving an unprecedented rate of change."
+    },
+    {
+      "question": "What are the main causes of climate change?",
+      "answer": "The main causes of climate change are human activities, such as burning fossil fuels (coal, oil, and natural gas), deforestation, and industrial processes, which increase the concentration of greenhouse gases in the atmosphere."
+    },
+    {
+      "question": "How does climate change affect the environment?",
+      "answer": "Climate change affects the environment in numerous ways, including more frequent and severe weather events, rising sea levels, melting glaciers and ice caps, shifts in ecosystems and wildlife habitats, and increased ocean acidity."
+    },
+    {
+      "question": "What can individuals do to combat climate change?",
+      "answer": "Individuals can combat climate change by reducing energy consumption, using renewable energy sources, minimizing waste, supporting sustainable practices, advocating for policy changes, and raising awareness about the issue."
+    },
+    {
+      "question": "What is the Paris Agreement?",
+      "answer": "The Paris Agreement is an international treaty adopted in 2015, aiming to limit global warming to well below 2 degrees Celsius above pre-industrial levels, with efforts to keep it to 1.5 degrees Celsius. Countries commit to reducing their greenhouse gas emissions and enhancing their resilience to climate impacts."
+    },
+    {
+      "question": "How does deforestation contribute to climate change?",
+      "answer": "Deforestation contributes to climate change by reducing the number of trees that can absorb carbon dioxide from the atmosphere. When forests are cleared, the carbon stored in trees is released into the atmosphere as carbon dioxide, a greenhouse gas."
+    },
+    {
+      "question": "What are the economic impacts of climate change?",
+      "answer": "Climate change has significant economic impacts, including damage to property and infrastructure from extreme weather events, increased costs for disaster relief and recovery, loss of agricultural productivity, and shifts in energy demand and supply."
+    },
+    {
+      "question": "How does climate change affect human health?",
+      "answer": "Climate change affects human health through increased heat-related illnesses, respiratory problems from poor air quality, spread of infectious diseases, food and water insecurity, and mental health issues related to climate-related stress and displacement."
+    },
+    {
+      "question": "What is the role of renewable energy in addressing climate change?",
+      "answer": "Renewable energy plays a crucial role in addressing climate change by providing cleaner alternatives to fossil fuels. Solar, wind, hydro, and geothermal energy sources produce little to no greenhouse gas emissions and can help reduce our reliance on carbon-intensive energy sources."
+    },
+    {
+      "question": "Why is it important to address climate change now?",
+      "answer": "It is important to address climate change now to mitigate its most severe impacts, protect ecosystems, ensure a sustainable future for the next generations, and minimize economic and health-related costs. Early action increases the effectiveness of mitigation and adaptation efforts."
+    }
+  ],
+  "eventsTitle": "Upcoming Events",
+  "createNewEvent": "Create New Event",
+  "joinEvent": "Join Event",
+  "climateEvents": [
+    {
+      "title": "Climate Change Awareness March",
+      "description": "Join us for a march through the city to raise awareness about climate change and its impact on our environment.",
+      "organizer": "Green Earth",
+      "date": "2024-07-15",
+      "participants": 150
+    },
+    {
+      "title": "Tree Planting Day",
+      "description": "Participate in our tree planting event to help restore our forests and combat climate change.",
+      "organizer": "Eco Warriors",
+      "date": "2024-08-01",
+      "participants": 200
+    },
+    {
+      "title": "Renewable Energy Workshop",
+      "description": "Attend our workshop to learn about renewable energy sources and how they can help reduce carbon emissions.",
+      "organizer": "Sustainable Future",
+      "date": "2024-07-25",
+      "participants": 75
+    },
+    {
+      "title": "Beach Clean-Up",
+      "description": "Join our community beach clean-up event to help remove plastic waste and protect marine life.",
+      "organizer": "Ocean Guardians",
+      "date": "2024-07-20",
+      "participants": 100
+    }
+  ],
+  "footerCopyright": "© 2024 ClimateLens. All rights reserved",
+  "footerPrivacyPolicy": "Privacy Policy",
+  "footerTermsConditions": "Terms & Conditions"
+  
   }
   
