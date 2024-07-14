@@ -1,20 +1,53 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Navbar, Nav, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './styles/Navigation.css';
 
+const loadLocale = async (locale) => {
+  const response = await fetch(`/locales/${locale}.json`);
+  const data = await response.json();
+  return data;
+};
+
 const NavigationBar = ({ onToggle }) => {
   const [expanded, setExpanded] = useState(false);
+  const [locale, setLocale] = useState('en');
+  const [texts, setTexts] = useState({});
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleToggle = () => {
     setExpanded(!expanded);
-    onToggle(!expanded);
   };
+
+  const handleLanguageChange = async () => {
+    const newLocale = locale === 'en' ? 'fr' : 'en';
+    setLocale(newLocale);
+    const loadedTexts = await loadLocale(newLocale);
+    setTexts(loadedTexts);
+  };
+
+  useEffect(() => {
+    const fetchTexts = async () => {
+      const loadedTexts = await loadLocale(locale);
+      setTexts(loadedTexts);
+    };
+    fetchTexts();
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [locale]);
 
   return (
     <Navbar
-      expand="xxl"
-      className="mb-3 nav_specs"
+      expand="xl"
+      className="mb-3 nav_specs custom-navbar"
       fixed="top"
       expanded={expanded}
       onToggle={handleToggle}
@@ -24,44 +57,51 @@ const NavigationBar = ({ onToggle }) => {
           <Row className="row">
             <Col>
               <img
-                alt="Logo"
+                alt={texts.logoAlt}
                 src={process.env.PUBLIC_URL + "/img/logo.png"}
                 className="logo"
               />
             </Col>
-            <Col>
-              <Nav.Link as={Link} to="/" className="logoName">
-                ClimateLens
-              </Nav.Link>
-            </Col>
+            {windowWidth > 1650 && (
+              <Col>
+                <Nav.Link as={Link} to="/" className="logoName">
+                  {texts.logoName}
+                </Nav.Link>
+              </Col>
+            )}
           </Row>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto nav_bar_spacing">
             <Row className="secondRow">
               <Col>
                 <Nav.Link as={Link} to="/news" className="nav_links">
-                  News
+                  {texts.news}
                 </Nav.Link>
               </Col>
               <Col>
                 <Nav.Link as={Link} to="/discussion" className="nav_links">
-                  Discussion
+                  {texts.discussion}
                 </Nav.Link>
               </Col>
               <Col>
                 <Nav.Link as={Link} to="/faq" className="nav_links">
-                  FAQ
+                  {texts.faq}
                 </Nav.Link>
               </Col>
               <Col>
                 <Nav.Link as={Link} to="/events" className="nav_links">
-                  Events
+                  {texts.events}
                 </Nav.Link>
               </Col>
               <Col>
-                <button className="donateButton">Donate</button>
+                <button className="donateButton">{texts.donate}</button>
+              </Col>
+              <Col>
+                <button className="languageButton" onClick={handleLanguageChange}>
+                  {locale === 'en' ? 'FR' : 'EN'}
+                </button>
               </Col>
             </Row>
           </Nav>

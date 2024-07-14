@@ -17,6 +17,8 @@ import ClimateChangeNews from './components/ClimateChangeNews';
 import NewThread from './components/NewThread';
 import ClimateChangeEvents from './components/ClimateChangeEvents';
 import NewEvent from './components/NewEvent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   // eslint-disable-next-line no-unused-vars
