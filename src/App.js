@@ -26,7 +26,7 @@ const loadLocale = async (locale) => {
 };
 
 const App = () => {
-  const [navbarExpanded, setNavbarExpanded] = useState(false);
+  const [setNavbarExpanded] = useState(false);
   const [discussions, setDiscussions] = useState([]);
   const [events, setEvents] = useState([]);
   const [locale, setLocale] = useState('en');
