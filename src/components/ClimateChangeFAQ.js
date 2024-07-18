@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import { useEffect, useState } from "react";
 import { Accordion } from "react-bootstrap";
 import "./styles/FAQ.css";
@@ -22,12 +23,12 @@ const ClimateChangeFAQ = ({ locale }) => {
   }, [locale]);
 
   return (
-    <div className="faq-page-wrapper">
+    <div className="faq-page-wrapper" role="region" aria-label={texts.faqHeader}>
       <div className="container">
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h1 className="faq-header">{texts.faqHeader}</h1>
+          <h1 className="faq-header" role="heading" aria-level="1">{texts.faqHeader}</h1>
         </div>
-        <Accordion defaultActiveKey="0">
+        <Accordion defaultActiveKey="0" aria-live="polite">
           {faqItems.map((item, index) => (
             <Accordion.Item eventKey={String(index)} key={index}>
               <Accordion.Header>{item.question}</Accordion.Header>

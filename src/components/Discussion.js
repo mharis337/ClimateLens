@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
@@ -39,21 +40,22 @@ const DiscussionBoard = ({ discussions, setDiscussions, locale }) => {
   };
 
   return (
-    <div className="discussion">
+    <div className="discussion" role="region" aria-label={texts.discussionForum}>
       <div className="container mt-5">
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h1 className="discTitle">{texts.discussionForum}</h1>
-          <Button className="threadButton" onClick={handleStartNewThread}>{texts.startNewThread}</Button>
+          <h1 className="discTitle" role="heading" aria-level="1">{texts.discussionForum}</h1>
+          <Button className="threadButton" onClick={handleStartNewThread} aria-label="Start a new discussion thread">{texts.startNewThread}</Button>
         </div>
 
         {localizedDiscussions.map((discussion, index) => (
-          <div key={index}>
+          <div key={index} role="article" aria-labelledby={`discussion-title-${index}`}>
             <CardTypeA
               title={discussion.title}
               description={discussion.description}
               author={discussion.author}
               date={discussion.date}
               replies={discussion.replies}
+              id={`discussion-title-${index}`}
             />
             {discussion.posts.map((post, idx) => (
               <CardTypeB

@@ -17,6 +17,8 @@ import ClimateChangeNews from './components/ClimateChangeNews';
 import NewThread from './components/NewThread';
 import ClimateChangeEvents from './components/ClimateChangeEvents';
 import NewEvent from './components/NewEvent';
+import Article from './components/Article';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const loadLocale = async (locale) => {
@@ -66,6 +68,7 @@ const App = () => {
           <Route path="/events" element={<ClimateChangeEvents events={events} setEvents={setEvents} locale={locale} />} />
           <Route path="/new-thread" element={<NewThread discussions={discussions} setDiscussions={setDiscussions} locale={locale} />} />
           <Route path="/new-event" element={<NewEvent events={events} setEvents={setEvents} locale={locale} />} />
+          <Route path="/article" element={<Article locale={locale} />} />
         </Routes>
         <Footer locale={locale} />
       </div>
@@ -88,23 +91,23 @@ const Home = ({ locale }) => {
     <>
       <CarouselSection locale={locale} />
       <ClimateStats locale={locale} />
-      <Tabs defaultActiveKey="maps" className="tabStyle" fill>
-        <Tab eventKey="maps" title={texts.maps}>
+      <Tabs defaultActiveKey="maps" className="tabStyle" fill role="tablist">
+        <Tab eventKey="maps" title={texts.maps} role="tab" aria-label={texts.maps}>
           <div style={{ height: '100%' }}>
             <GlobalWarmingMap locale={locale} />
           </div>
         </Tab>
-        <Tab eventKey="charts" title={texts.charts}>
+        <Tab eventKey="charts" title={texts.charts} role="tab" aria-label={texts.charts}>
           <div style={{ height: '100%' }}>
             <GlobalWarmingCharts locale={locale} />
           </div>
         </Tab>
-        <Tab eventKey="resources" title={texts.resources}>
-          <Tabs className="tabStyle" fill>
-            <Tab eventKey="videos" title={texts.videos}>
+        <Tab eventKey="resources" title={texts.resources} role="tab" aria-label={texts.resources}>
+          <Tabs className="tabStyle" fill role="tablist">
+            <Tab eventKey="videos" title={texts.videos} role="tab" aria-label={texts.videos}>
               <ClimateVideos locale={locale} />
             </Tab>
-            <Tab eventKey="articles" title={texts.articles}>
+            <Tab eventKey="articles" title={texts.articles} role="tab" aria-label={texts.articles}>
               <ClimateArticle locale={locale} />
             </Tab>
           </Tabs>

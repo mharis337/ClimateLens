@@ -31,10 +31,10 @@ const GlobalWarmingCharts = ({ locale }) => {
   };
 
   return (
-    <Container fluid style={{ height: '100vh', width: '100vw', background: '#a5d5e7ff' }}>
+    <Container fluid style={{ height: '100vh', width: '100vw', background: '#a5d5e7ff' }} role="region" aria-label={texts.globalWarmingCharts}>
       <Row>
         <Col>
-          <ButtonGroup>
+          <ButtonGroup role="group" aria-label={texts.layerSelection}>
             {[
               { name: texts.co2VsTemperature, value: 'co2' },
               { name: texts.seaLevels, value: 'sea_levels' },
@@ -45,6 +45,7 @@ const GlobalWarmingCharts = ({ locale }) => {
                 key={idx}
                 variant={activeLayer === radio.value ? "primary" : "secondary"}
                 onClick={() => handleClick(radio.value)}
+                aria-pressed={activeLayer === radio.value}
               >
                 {radio.name}
               </Button>
@@ -60,6 +61,7 @@ const GlobalWarmingCharts = ({ locale }) => {
             loop 
             muted 
             style={{ width: '100%', height: '100%', objectFit: 'contain', pointerEvents: 'none' }} 
+            aria-label={texts[activeLayer]}
           />
         </Col>
       </Row>

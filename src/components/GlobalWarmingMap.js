@@ -31,10 +31,10 @@ const GlobalWarmingMap = ({ locale }) => {
   };
 
   return (
-    <Container fluid style={{ height: '100vh', width: '100vw', background: '#a5d5e7ff' }}>
+    <Container fluid style={{ height: '100vh', width: '100vw', background: '#a5d5e7ff' }} role="region" aria-label={texts.globalWarmingMap}>
       <Row>
         <Col>
-          <ButtonGroup>
+          <ButtonGroup role="group" aria-label={texts.layerSelection}>
             {[
               { name: texts.co2, value: 'co2' },
               { name: texts.seaLevels, value: 'sea_levels' },
@@ -45,6 +45,7 @@ const GlobalWarmingMap = ({ locale }) => {
                 key={idx}
                 variant={activeLayer === radio.value ? "primary" : "secondary"}
                 onClick={() => handleClick(radio.value)}
+                aria-pressed={activeLayer === radio.value}
               >
                 {radio.name}
               </Button>
@@ -61,11 +62,12 @@ const GlobalWarmingMap = ({ locale }) => {
               loop 
               muted 
               style={{ width: '100%', height: '100%', objectFit: 'contain', pointerEvents: 'none' }} 
+              aria-label={texts[activeLayer]}
             />
           ) : (
             <img 
               src={media[activeLayer]} 
-              alt={activeLayer} 
+              alt={texts[activeLayer]} 
               style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
             />
           )}

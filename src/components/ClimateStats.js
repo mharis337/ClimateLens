@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 import { Container, Carousel, Row, Col } from 'react-bootstrap';
 import './styles/ClimateStats.css';
@@ -59,17 +60,23 @@ const ClimateStats = ({ locale }) => {
     window.addEventListener('resize', updateGrouping);
 
     return () => window.removeEventListener('resize', updateGrouping);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [texts]);
 
   return (
     <Container className="stat-colors" fluid>
-      <Carousel activeIndex={index} onSelect={handleSelect} interval={null} style={{ color: '#FFF' }}>
+      <Carousel
+        activeIndex={index}
+        onSelect={handleSelect}
+        interval={null}
+        style={{ color: '#FFF' }}
+        aria-roledescription="carousel"
+        aria-label="Climate statistics carousel"
+      >
         {groupedStats.map((group, idx) => (
           <Carousel.Item key={idx}>
-            <Row>
+            <Row role="group" aria-label={`Slide ${idx + 1}`}>
               {group.map((stat, index) => (
-                <Col key={index} md={3}>
+                <Col key={index} md={3} role="group" aria-label={stat.title}>
                   <div className="stat-card">
                     <h3>{stat.title}</h3>
                     <div className={`value ${stat.trend}`}>{stat.value}</div>

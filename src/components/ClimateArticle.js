@@ -52,17 +52,19 @@ const ClimateArticle = ({ locale }) => {
 
   return (
     <div style={{ background: "#a5d5e7ff" }}>
-      <Container fluid style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+      <Container fluid style={{ paddingTop: "20px", paddingBottom: "20px" }} role="region" aria-label={texts.climateArticles}>
         {articles.map((article, index) => (
-          <Row key={index} className="mb-3">
+          <Row key={index} className="mb-3" role="article">
             <Col>
               <Card className="custom-card">
                 <Card.Body>
-                  <Card.Title className="custom-card-title">
+                  <Card.Title className="custom-card-title" role="heading" aria-level="2">
                     {article.title}
                   </Card.Title>
                   <Card.Text>{article.description}</Card.Text>
-                  <Button className="custom-button">{texts.button}</Button>
+                  <Button className="custom-button" href="/article" aria-label={`${texts.button} for ${article.title}`}>
+                    {texts.button}
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>

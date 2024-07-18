@@ -25,14 +25,15 @@ const CarouselSection = ({ locale }) => {
   const gradient3 = 'linear-gradient(to right, rgba(4, 196, 245, 0.7), rgba(32, 108, 60, 0.7))';
 
   return (
-    <div className="hero-section">
-      <div className="overlay"></div>
+    <div className="hero-section" role="region" aria-label="Carousel Section">
+      <div className="overlay" aria-hidden="true"></div>
       <div className="hero-content">
-        <Carousel slide={true}>
+        <Carousel slide={true} interval={null} indicators={false} aria-roledescription="carousel">
           <Carousel.Item>
             <CarouselImage
               image="/img/hero-bg.png"
               gradient={gradient1}
+              aria-label="Understanding Climate Change"
             >
               <h3>{texts.understandingClimateChange}</h3>
               <p>{texts.climateChangeImpact}</p>
@@ -42,6 +43,7 @@ const CarouselSection = ({ locale }) => {
             <CarouselImage
               image="/img/hero2-bg.jpg"
               gradient={gradient2}
+              aria-label="Renewable Energy Solutions"
             >
               <h3>{texts.renewableEnergySolutions}</h3>
               <p>{texts.renewableEnergyAdvancements}</p>
@@ -51,6 +53,7 @@ const CarouselSection = ({ locale }) => {
             <CarouselImage
               image="/img/hero3-bg.jpg"
               gradient={gradient3}
+              aria-label="Take Action"
             >
               <h3>{texts.takeAction}</h3>
               <p>{texts.sustainablePractices}</p>

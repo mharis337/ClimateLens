@@ -85,7 +85,7 @@ const ClimateVideos = ({ locale }) => {
 
   return (
     <div style={{ background: "#a5d5e7ff" }}>
-      <Container fluid style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+      <Container fluid style={{ paddingTop: "20px", paddingBottom: "20px" }} role="region" aria-label={texts.climateVideos}>
         <Row className="justify-content-center">
           {videos.map((video, index) => (
             <Col key={index} md={2}>
@@ -94,7 +94,9 @@ const ClimateVideos = ({ locale }) => {
                   <iframe
                     className="video-iframe"
                     src={video.url}
+                    title={video.title}
                     allowFullScreen
+                    aria-label={video.description}
                   ></iframe>
                 </div>
                 <Card.Body>

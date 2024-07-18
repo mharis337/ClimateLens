@@ -1,0 +1,14 @@
+/*Article*/
+.article-page{
+    background-color: #A5D5E7ff;
+    height: 120vh;
+    padding-top: 50px;   
+    font-family: 'Modak';
+}
+
+.article-title{
+    font-size: 60px;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000;
+
+}

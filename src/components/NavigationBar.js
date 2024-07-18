@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import { useState, useEffect } from 'react';
 import { Container, Navbar, Nav, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -46,12 +47,13 @@ const NavigationBar = ({ onToggle, onLanguageChange, locale }) => {
     >
       <Container fluid>
         <Navbar.Brand href="/">
-          <Row className="row">
+          <Row className="row" role="banner">
             <Col>
               <img
                 alt={texts.logoAlt}
                 src={process.env.PUBLIC_URL + "/img/logo.png"}
                 className="logo"
+                role="img"
               />
             </Col>
             {windowWidth > 1650 && (
@@ -63,9 +65,9 @@ const NavigationBar = ({ onToggle, onLanguageChange, locale }) => {
             )}
           </Row>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleToggle} />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" aria-expanded={expanded} onClick={handleToggle} />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto nav_bar_spacing">
+          <Nav className="ms-auto nav_bar_spacing" role="navigation" aria-label="Main Navigation">
             <Row className="secondRow">
               <Col>
                 <Nav.Link as={Link} to="/news" className="nav_links">
@@ -88,10 +90,18 @@ const NavigationBar = ({ onToggle, onLanguageChange, locale }) => {
                 </Nav.Link>
               </Col>
               <Col>
-                <button className="donateButton">{texts.donate}</button>
+                <button className="donateButton">
+                  <a
+                    style={{ textDecoration: "none", color: "rgb(248, 187, 60)" }}
+                    href="https://www.givingwhatwecan.org/charities/giving-green-fund"
+                    aria-label="Donate"
+                  >
+                    {texts.donate}
+                  </a>
+                </button>
               </Col>
               <Col>
-                <button className="languageButton" onClick={onLanguageChange}>
+                <button className="languageButton" onClick={onLanguageChange} aria-label="Change Language">
                   {locale === 'en' ? 'FR' : 'EN'}
                 </button>
               </Col>
